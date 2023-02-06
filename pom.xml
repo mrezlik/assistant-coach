@@ -17,9 +17,8 @@
     </parent>
 
     <modules>
-        <module>assistant-coach-web</module>
-        <module>assistant-coach-api</module>
-        <module>assistant-coach-api</module>
+        <module>web</module>
+        <module>api</module>
     </modules>
 
 </project>

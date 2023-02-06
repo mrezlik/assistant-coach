@@ -14,7 +14,9 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <artifactId>assistant-coach-api</artifactId>
+    <artifactId>api</artifactId>
+    <name>Assistant Coach API</name>
+    <description>An Spring application as part of a assistant coach app</description>
 
     <dependencies>
         <dependency>
@@ -41,6 +43,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.5.3</version>
         </dependency>
     </dependencies>
 
