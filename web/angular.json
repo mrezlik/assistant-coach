@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "6d62a20b-3eed-4304-9d18-c0923186b888"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "assistant-coach-web": {
+    "web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/assistant-coach-web",
+            "outputPath": "dist/web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "assistant-coach-web:build:production"
+              "browserTarget": "web:build:production"
             },
             "development": {
-              "browserTarget": "assistant-coach-web:build:development"
+              "browserTarget": "web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "assistant-coach-web:build"
+            "browserTarget": "web:build"
           }
         },
         "test": {
@@ -102,8 +105,5 @@
       }
     }
   },
-  "defaultProject": "assistant-coach-web",
-  "cli": {
-    "analytics": "9b2b66b7-35b0-4331-8cc1-7609479c0008"
-  }
+  "defaultProject": "web"
 }
