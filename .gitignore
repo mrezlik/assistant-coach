@@ -1,2 +1,4 @@
 /.idea/
 */target/*
+/web/.angular/*
+/web/node_modules/*

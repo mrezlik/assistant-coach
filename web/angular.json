@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "assistant-coach-web"
+  "defaultProject": "assistant-coach-web",
+  "cli": {
+    "analytics": "9b2b66b7-35b0-4331-8cc1-7609479c0008"
+  }
 }
