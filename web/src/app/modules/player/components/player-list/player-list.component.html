@@ -1,1 +1,4 @@
-<p>player-list works!</p>
+<ng-container *ngFor="let player of players$ | async">
+  Imie: {{player.name}}
+  Pozycja: {{player.position}}
+</ng-container>
